@@ -6,11 +6,27 @@ const initialValue = {
     age: 24
 }
 
+const ObjectRepresentation = ({object}) => {
+    return (
+        <div>
+            <h3>Person Object</h3>
+            <strong>
+                <pre>
+                    {JSON.stringify(object, undefined, 4)}
+                </pre>
+            </strong>
+        </div>
+    )
+}
 const PersonForm = () => {
     const [person, setPeson] = useState(initialValue)
     console.log(person);
 
     return(
+        <>
+        <div>
+            <ObjectRepresentation object={person}/>
+        </div>
         <form>
             <div>
                 <label htmlFor="">Name: </label>
@@ -28,6 +44,7 @@ const PersonForm = () => {
                 <button>Send Data</button>
             </div>
         </form>
+        </>
     )
 }
 
