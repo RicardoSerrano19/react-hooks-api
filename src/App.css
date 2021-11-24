@@ -31,6 +31,18 @@
   border-bottom: 0.2rem solid white;
 }
 
+.box{
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.rojo{
+  background-color: red;
+}
+
+.verde{
+  background-color: green;
+}
 div.title{
   font-size: calc(10px + 2vmin);
 }
