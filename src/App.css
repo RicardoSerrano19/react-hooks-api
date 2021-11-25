@@ -69,3 +69,10 @@ form div{
   margin-bottom: 1rem;
   width: 100%;
 }
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  min-width: 100vw;
+}
