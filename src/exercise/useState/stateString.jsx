@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import '../App.css'
+import '../../App.css'
 import {BrowserRouter, Link, Route, Routes} from 'react-router-dom'
 
 const MoneyForm = () => {
