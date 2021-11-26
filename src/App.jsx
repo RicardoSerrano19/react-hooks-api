@@ -1,30 +1,29 @@
 import {BrowserRouter, Link, Route, Routes} from 'react-router-dom'
-import StateString from './exercise/stateString'
-import StateBoolean from './exercise/stateBoolean'
-import StateObject from './exercise/stateObject'
-import StateArray from './exercise/stateArray'
+import Menu from './exercise/Menu'
+import MenuState from './exercise/MenuState'
+import MenuEffect from './exercise/MenuEffect'
+import StateString from './exercise/useState/stateString'
+import StateBoolean from './exercise/useState/stateBoolean'
+import StateObject from './exercise/useState/stateObject'
+import StateArray from './exercise/useState/stateArray'
 
 import './App.css'
 
-const NavBar = () => {
-    return (
-        <div className='navbar'>
-            <Link to='/'>String</Link>
-            <Link to='boolean'>Boolean</Link>
-            <Link to='object'>Object</Link>
-            <Link to='array'>Array</Link>
-        </div>
-    )
-}
+
 const App = () => {
     return(
         <BrowserRouter>
-            <NavBar />
             <Routes>
-                <Route path='/' element={<StateString />}/>
-                <Route path='boolean' element={<StateBoolean />}/>
-                <Route path='object' element={<StateObject />}/>
-                <Route path='array' element={<StateArray />}/>
+                <Route path='/' element={<Menu />} >
+                    <Route path='state' element={<MenuState />}>
+                        <Route path='string' element={<StateString />}/>
+                        <Route path='boolean' element={<StateBoolean />}/>
+                        <Route path='object' element={<StateObject />}/>
+                        <Route path='array' element={<StateArray />}/>
+                    </Route>
+                    <Route path='effect' element={<MenuEffect />}>
+                    </Route>
+                </Route>
             </Routes>
         </BrowserRouter>
     )
