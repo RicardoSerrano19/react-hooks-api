@@ -23,16 +23,3 @@ const Menu = () => {
 } 
 
 export default Menu;
-
-/*
- <>
-        <div className='navbar'>
-            <Link to='/'>Menu</Link>
-            <Link to='string'>String</Link>
-            <Link to='boolean'>Boolean</Link>
-            <Link to='object'>Object</Link>
-            <Link to='array'>Array</Link>
-        </div>
-        <Outlet />
-        </>
-*/

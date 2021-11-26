@@ -1,5 +1,8 @@
 
 import {Link, Outlet} from 'react-router-dom'
+import ReactMarkdown from 'react-markdown'
+import {useEffect, useState} from 'react'
+import { useReadFile } from '../hooks/useReadFile'
 import '../App.css'
 
 const NavBar = () => {
@@ -16,9 +19,17 @@ const NavBar = () => {
     )
 }
 
+
 const MenuState = () => {
+    const markdown = useReadFile('STATE.md')
+
     return(
-        <NavBar />
+        <>
+            <NavBar />
+            <div className='center'>
+                <ReactMarkdown className='w-90' children={markdown}/>
+            </div> 
+        </>
     )
 } 
 
