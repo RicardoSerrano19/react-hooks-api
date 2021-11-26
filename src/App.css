@@ -76,3 +76,12 @@ form div{
   justify-content: space-evenly;
   min-width: 100vw;
 }
+
+.w-90{
+  max-width: 90%;
+}
+
+.center {
+  display:flex;
+  justify-content: center;
+}
