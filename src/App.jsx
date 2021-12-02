@@ -6,6 +6,7 @@ import StateString from './exercise/useState/stateString'
 import StateBoolean from './exercise/useState/stateBoolean'
 import StateObject from './exercise/useState/stateObject'
 import StateArray from './exercise/useState/stateArray'
+import EffectEveryRender from './exercise/useEffect/effectEveryRender'
 
 import './App.css'
 
@@ -22,6 +23,7 @@ const App = () => {
                         <Route path='array' element={<StateArray />}/>
                     </Route>
                     <Route path='effect' element={<MenuEffect />}>
+                        <Route path='effectEveryRender' element={<EffectEveryRender />}/>
                     </Route>
                 </Route>
             </Routes>
