@@ -9,6 +9,7 @@ const NavBar = () => {
         <>
         <div className='navbar'>
             <Link to='effectEveryRender'>EveryRender - DidUpdate + DidMount</Link>
+            <Link to='effectConditionallyRunEffects'>ConditionallyRunEffect - Dependencies</Link>
         </div>
         <Outlet />
         </>

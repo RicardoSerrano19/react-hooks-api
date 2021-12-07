@@ -7,6 +7,7 @@ import StateBoolean from './exercise/useState/stateBoolean'
 import StateObject from './exercise/useState/stateObject'
 import StateArray from './exercise/useState/stateArray'
 import EffectEveryRender from './exercise/useEffect/effectEveryRender'
+import EffectConditionallyRunEffects from './exercise/useEffect/effectConditionallyRunEffects'
 
 import './App.css'
 
@@ -24,6 +25,7 @@ const App = () => {
                     </Route>
                     <Route path='effect' element={<MenuEffect />}>
                         <Route path='effectEveryRender' element={<EffectEveryRender />}/>
+                        <Route path='effectConditionallyRunEffects' element={<EffectConditionallyRunEffects />}/>
                     </Route>
                 </Route>
             </Routes>
