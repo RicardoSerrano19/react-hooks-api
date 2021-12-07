@@ -6,9 +6,9 @@ const Counter = () =>{
 
     console.log('- Counter: render')
     useEffect(() => {
-        console.log('- Counter: useEffect (function, null)')
+        console.log('- Counter: useEffect (function, [count])')
         document.title = `You have click ${count} times` 
-    });
+    }, [count]);
 
     const handleTextChange = e =>{
         const name = e.target.value;
