@@ -8,6 +8,7 @@ import StateObject from './exercise/useState/stateObject'
 import StateArray from './exercise/useState/stateArray'
 import EffectEveryRender from './exercise/useEffect/effectEveryRender'
 import EffectConditionallyRunEffects from './exercise/useEffect/effectConditionallyRunEffects'
+import EffectOnlyOnce from './exercise/useEffect/effectOnlyOnce'
 
 import './App.css'
 
@@ -26,6 +27,7 @@ const App = () => {
                     <Route path='effect' element={<MenuEffect />}>
                         <Route path='effectEveryRender' element={<EffectEveryRender />}/>
                         <Route path='effectConditionallyRunEffects' element={<EffectConditionallyRunEffects />}/>
+                        <Route path='effectOnlyOnce' element={<EffectOnlyOnce />}/>
                     </Route>
                 </Route>
             </Routes>
