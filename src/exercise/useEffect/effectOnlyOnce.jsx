@@ -7,8 +7,13 @@ export default function EffectOnlyOnce() {
 
     console.log('- EffectOnlyOnce: render')
     useEffect(() => {
-        console.log('- EffectOnlyOnce: useEffect (function, null')
+        console.log('- EffectOnlyOnce: useEffect (function, [])')
         window.addEventListener('mousemove', logMousePosition)
+
+        return () => {
+            console.log('- EffectOnlyOnce: useEffect (function, []): Cleanup')
+            window.removeEventListener('mousemove', logMousePosition)
+        }
     }, [])
 
     const logMousePosition = event => {
