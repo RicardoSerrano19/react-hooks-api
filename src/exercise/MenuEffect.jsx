@@ -11,6 +11,7 @@ const NavBar = () => {
             <Link to='effectEveryRender'>EveryRender - DidUpdate + DidMount</Link>
             <Link to='effectConditionallyRunEffects'>ConditionallyRunEffect - Dependencies</Link>
             <Link to='effectOnlyOnce'>Only Once - DidMount</Link>
+            <Link to='effectCleanup'>Only Once - WillUnmount</Link>
         </div>
         <Outlet />
         </>
