@@ -10,6 +10,7 @@ import EffectEveryRender from './exercise/useEffect/effectEveryRender'
 import EffectConditionallyRunEffects from './exercise/useEffect/effectConditionallyRunEffects'
 import EffectOnlyOnce from './exercise/useEffect/effectOnlyOnce'
 import EffectCleanup from './exercise/useEffect/effectWithCleanup'
+import EffectTimer from './exercise/useEffect/effectTimer'
 
 import './App.css'
 
@@ -30,6 +31,7 @@ const App = () => {
                         <Route path='effectConditionallyRunEffects' element={<EffectConditionallyRunEffects />}/>
                         <Route path='effectOnlyOnce' element={<EffectOnlyOnce />}/>
                         <Route path='effectCleanup' element={<EffectCleanup />}/>
+                        <Route path='effectTimer' element={<EffectTimer />}/>
                     </Route>
                 </Route>
             </Routes>
