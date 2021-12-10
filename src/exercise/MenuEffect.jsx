@@ -13,6 +13,7 @@ const NavBar = () => {
             <Link to='effectOnlyOnce'>Only Once - DidMount</Link>
             <Link to='effectCleanup'>Only Once - WillUnmount</Link>
             <Link to='effectTimer'>Timer</Link>
+            <Link to='effectDataFetch'>Data Fetch</Link>
         </div>
         <Outlet />
         </>

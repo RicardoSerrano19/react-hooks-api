@@ -11,6 +11,7 @@ import EffectConditionallyRunEffects from './exercise/useEffect/effectConditiona
 import EffectOnlyOnce from './exercise/useEffect/effectOnlyOnce'
 import EffectCleanup from './exercise/useEffect/effectWithCleanup'
 import EffectTimer from './exercise/useEffect/effectTimer'
+import EffectDataFetch from './exercise/useEffect/effectDataFetching'
 
 import './App.css'
 
@@ -32,6 +33,7 @@ const App = () => {
                         <Route path='effectOnlyOnce' element={<EffectOnlyOnce />}/>
                         <Route path='effectCleanup' element={<EffectCleanup />}/>
                         <Route path='effectTimer' element={<EffectTimer />}/>
+                        <Route path='effectDataFetch' element={<EffectDataFetch />}/>
                     </Route>
                 </Route>
             </Routes>
