@@ -7,10 +7,15 @@ export default function ContextUsername() {
     const [userName, setUserName] = useState('Ricardo Serrano');
     console.log('- ContextUsername: render')
 
+    const handleClick = (e) => {
+        const name = e.target.value;
+        setUserName(name);
+    }
     return (
         <div className='App'>
-            <PreferencesContext.Provider>
+            <PreferencesContext.Provider value={'nothing'}>
                 <UserContext.Provider value={userName}>
+                    Username: <input type="text" value={userName} onChange={handleClick}/>
                     <Layout>
                         Main Content
                     </Layout>
