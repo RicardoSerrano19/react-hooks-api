@@ -2,6 +2,7 @@ import {BrowserRouter, Link, Route, Routes} from 'react-router-dom'
 import Menu from './exercise/Menu'
 import MenuState from './exercise/MenuState'
 import MenuEffect from './exercise/MenuEffect'
+import MenuContext from './exercise/MenuContext'
 import StateString from './exercise/useState/stateString'
 import StateBoolean from './exercise/useState/stateBoolean'
 import StateObject from './exercise/useState/stateObject'
@@ -12,6 +13,7 @@ import EffectOnlyOnce from './exercise/useEffect/effectOnlyOnce'
 import EffectCleanup from './exercise/useEffect/effectWithCleanup'
 import EffectTimer from './exercise/useEffect/effectTimer'
 import EffectDataFetch from './exercise/useEffect/effectDataFetching'
+import ContextUsername from './exercise/useContext/contextUsername'
 
 import './App.css'
 
@@ -34,6 +36,9 @@ const App = () => {
                         <Route path='effectCleanup' element={<EffectCleanup />}/>
                         <Route path='effectTimer' element={<EffectTimer />}/>
                         <Route path='effectDataFetch' element={<EffectDataFetch />}/>
+                    </Route>
+                    <Route path='context' element={<MenuContext />}>
+                        <Route path='contextUsername' element={<ContextUsername />}/>
                     </Route>
                 </Route>
             </Routes>

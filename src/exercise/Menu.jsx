@@ -8,6 +8,7 @@ const NavBar = () => {
         <div className='navbar'>
             <Link to='state'>useState</Link>
             <Link to='effect'>useEffect</Link>
+            <Link to='context'>useContext</Link>
         </div>
         <Outlet />
         </>
