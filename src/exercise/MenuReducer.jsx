@@ -18,7 +18,7 @@ const NavBar = () => {
 
 
 const MenuReducer = () => {
-    const markdown = useReadFile('CONTEXT.md')
+    const markdown = useReadFile('REDUCER.md')
 
     return(
         <>
