@@ -10,6 +10,7 @@ const NavBar = () => {
         <>
         <div className='navbar'>
             <Link to='contextUsername'>UsernameContext</Link>
+            <Link to='contextTheme'>ThemeContext</Link>
         </div>
         <Outlet />
         </>

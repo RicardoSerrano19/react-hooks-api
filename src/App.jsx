@@ -14,6 +14,7 @@ import EffectCleanup from './exercise/useEffect/effectWithCleanup'
 import EffectTimer from './exercise/useEffect/effectTimer'
 import EffectDataFetch from './exercise/useEffect/effectDataFetching'
 import ContextUsername from './exercise/useContext/contextUsername'
+import ContextTheme from './exercise/useContext/contextTheme'
 
 import './App.css'
 
@@ -39,6 +40,7 @@ const App = () => {
                     </Route>
                     <Route path='context' element={<MenuContext />}>
                         <Route path='contextUsername' element={<ContextUsername />}/>
+                        <Route path='contextTheme' element={<ContextTheme />}/>
                     </Route>
                 </Route>
             </Routes>
