@@ -9,6 +9,7 @@ const NavBar = () => {
             <Link to='state'>useState</Link>
             <Link to='effect'>useEffect</Link>
             <Link to='context'>useContext</Link>
+            <Link to='reducer'>useReducer</Link>
         </div>
         <Outlet />
         </>

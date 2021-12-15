@@ -3,6 +3,7 @@ import Menu from './exercise/Menu'
 import MenuState from './exercise/MenuState'
 import MenuEffect from './exercise/MenuEffect'
 import MenuContext from './exercise/MenuContext'
+import MenuReducer from './exercise/MenuReducer'
 import StateString from './exercise/useState/stateString'
 import StateBoolean from './exercise/useState/stateBoolean'
 import StateObject from './exercise/useState/stateObject'
@@ -15,6 +16,7 @@ import EffectTimer from './exercise/useEffect/effectTimer'
 import EffectDataFetch from './exercise/useEffect/effectDataFetching'
 import ContextUsername from './exercise/useContext/contextUsername'
 import ContextTheme from './exercise/useContext/contextTheme'
+import ReducerCounter from './exercise/useReducer/reducerCounter'
 
 import './App.css'
 
@@ -41,6 +43,9 @@ const App = () => {
                     <Route path='context' element={<MenuContext />}>
                         <Route path='contextUsername' element={<ContextUsername />}/>
                         <Route path='contextTheme' element={<ContextTheme />}/>
+                    </Route>
+                    <Route path='reducer' element={<MenuReducer />}>
+                        <Route path='reducerCounter' element={<ReducerCounter />}/>
                     </Route>
                 </Route>
             </Routes>
