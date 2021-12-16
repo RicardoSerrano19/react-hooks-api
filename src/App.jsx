@@ -17,6 +17,7 @@ import EffectDataFetch from './exercise/useEffect/effectDataFetching'
 import ContextUsername from './exercise/useContext/contextUsername'
 import ContextTheme from './exercise/useContext/contextTheme'
 import ReducerCounter from './exercise/useReducer/reducerCounter'
+import ReducerFetch from './exercise/useReducer/reducerFetch'
 
 import './App.css'
 
@@ -46,6 +47,7 @@ const App = () => {
                     </Route>
                     <Route path='reducer' element={<MenuReducer />}>
                         <Route path='reducerCounter' element={<ReducerCounter />}/>
+                        <Route path='reducerFetch' element={<ReducerFetch />}/>
                     </Route>
                 </Route>
             </Routes>

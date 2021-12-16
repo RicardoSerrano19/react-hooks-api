@@ -10,6 +10,7 @@ const NavBar = () => {
         <>
         <div className='navbar'>
             <Link to='reducerCounter'>Counter</Link>
+            <Link to='reducerFetch'>Fetch</Link>
         </div>
         <Outlet />
         </>
