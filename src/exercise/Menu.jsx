@@ -10,6 +10,7 @@ const NavBar = () => {
             <Link to='effect'>useEffect</Link>
             <Link to='context'>useContext</Link>
             <Link to='reducer'>useReducer</Link>
+            <Link to='callback'>useCallback</Link>
         </div>
         <Outlet />
         </>

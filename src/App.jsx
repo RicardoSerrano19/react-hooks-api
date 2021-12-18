@@ -4,6 +4,7 @@ import MenuState from './exercise/MenuState'
 import MenuEffect from './exercise/MenuEffect'
 import MenuContext from './exercise/MenuContext'
 import MenuReducer from './exercise/MenuReducer'
+import MenuCallback from './exercise/MenuCallback'
 import StateString from './exercise/useState/stateString'
 import StateBoolean from './exercise/useState/stateBoolean'
 import StateObject from './exercise/useState/stateObject'
@@ -18,6 +19,7 @@ import ContextUsername from './exercise/useContext/contextUsername'
 import ContextTheme from './exercise/useContext/contextTheme'
 import ReducerCounter from './exercise/useReducer/reducerCounter'
 import ReducerFetch from './exercise/useReducer/reducerFetch'
+import CallbackApp from './exercise/useCallback/callbackApp'
 
 import './App.css'
 
@@ -48,6 +50,9 @@ const App = () => {
                     <Route path='reducer' element={<MenuReducer />}>
                         <Route path='reducerCounter' element={<ReducerCounter />}/>
                         <Route path='reducerFetch' element={<ReducerFetch />}/>
+                    </Route>
+                    <Route path='callback' element={<MenuCallback />}>
+                        <Route path='callbackApp' element={<CallbackApp />}/>
                     </Route>
                 </Route>
             </Routes>
