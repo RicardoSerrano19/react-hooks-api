@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react'
+import React,{useState, useCallback} from 'react'
 import {v4 as uuidv4} from 'uuid'
 import List from './List'
 
@@ -7,6 +7,7 @@ const generateUUID = () =>{
 }
 
 const CallbackApp = () => {
+    console.log('Render: App');
     const [users, setUsers] = useState([
         { id: 'a', name: 'Robin'},
         { id: 'b', name: 'Dennis'}
@@ -22,10 +23,10 @@ const CallbackApp = () => {
         setUsers(newUsers)
     }
 
-    const handleRemove = (id) => {
+    const handleRemove = useCallback((id) => {
         const newUsers = users.filter((user) => user.id !== id)
         setUsers(newUsers)
-    }
+    }, [users])
 
     return (
         <div className='App'>
