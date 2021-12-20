@@ -2,7 +2,7 @@ import React from 'react'
 
 const ListItem = ({item, onRemove}) => {
     return (
-        <li key={item.id}>
+        <li>
             {item.name}
             <button type="button" onClick={() => onRemove(item.id)}>
                 Remove

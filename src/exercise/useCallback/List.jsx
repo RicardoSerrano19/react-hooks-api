@@ -5,7 +5,7 @@ const List = ({list, onRemove}) => {
     return (
         <ul>
             {list.map((item) => (
-                <ListItem item={item} onRemove={onRemove}/>
+                <ListItem key={item.id} item={item} onRemove={onRemove}/>
             ))}
         </ul>
     )
