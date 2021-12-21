@@ -22,6 +22,7 @@ import ReducerCounter from './exercise/useReducer/reducerCounter'
 import ReducerFetch from './exercise/useReducer/reducerFetch'
 import CallbackApp from './exercise/useCallback/callbackApp'
 import RefUpdate from './exercise/useRef/refUpdate'
+import RefDOM from './exercise/useRef/refDom'
 
 import './App.css'
 
@@ -58,6 +59,7 @@ const App = () => {
                     </Route>
                     <Route path='ref' element={<MenuRef />}>
                         <Route path='refUpdate' element={<RefUpdate />}/>
+                        <Route path='refDOM' element={<RefDOM />}/>
                     </Route>
                 </Route>
             </Routes>

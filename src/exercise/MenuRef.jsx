@@ -10,6 +10,7 @@ const NavBar = () => {
         <>
         <div className='navbar'>
             <Link to='refUpdate'>Update Ref</Link>
+            <Link to='refDOM'>DOM</Link>
         </div>
         <Outlet />
         </>
