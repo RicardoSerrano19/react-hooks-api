@@ -11,6 +11,7 @@ const NavBar = () => {
             <Link to='context'>useContext</Link>
             <Link to='reducer'>useReducer</Link>
             <Link to='callback'>useCallback</Link>
+            <Link to='ref'>useRef</Link>
         </div>
         <Outlet />
         </>
