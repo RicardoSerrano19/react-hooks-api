@@ -6,7 +6,6 @@ function useReadFile(path){
     useEffect(() => {
         async function fethFile(){
             const response = await fetch('../src/md/' + path);
-            console.log("response => ", response);
             const text = await response.text();
             setText(text);
         }  
